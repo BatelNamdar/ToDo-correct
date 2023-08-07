@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List with Bootstrap</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="text-center mb-4">Todo List</h1>
+    <div class="form-group my-5">
+      <input type="text" class="form-control shadow" id="todoInput" placeholder="Enter your todo">
+    </div>
+    <button class="btn btn-primary mb-2 shadow-lg border" onclick="addTodo()">Add Todo</button>
+   
+    <button class="btn btn-danger mb-2 shadow-lg border" onclick="deleteCompletedTodos()">Delete Completed</button>
+    <ul class="list-group" id="todoList">
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
