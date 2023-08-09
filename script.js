@@ -13,7 +13,7 @@ class Todo {
         listItem.innerHTML = `
           <span class="${this.completed ? 'completed' : ''}">${this.text}</span>
           <div class="btn-group">
-            <button class="btn btn-sm btn-success w-5" onclick="todos[${index}].toggleComplete()"><i class="bi bi-check-all w-5"></i></button>
+            <button class="btn btn-sm btn-success w-25" onclick="todos[${index}].toggleComplete()"><i class="bi bi-check-all w-5"></i></button>
             <select class="form-control form-control-sm w-5" onchange="todos[${index}].changeBackgroundColor(this.value)">
               <option value="transparent" ${this.bgColor === 'transparent' ? 'selected' : ''}>Default </option>
               <option value="lightblue" ${this.bgColor === 'lightblue' ? 'selected' : ''}>Light Blue</option>
